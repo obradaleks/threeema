@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Threema</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .container { max-width: 300px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        input { width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #008000; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #006400; }
+        .warning { color: red; font-weight: bold; display: none; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Connexion à Threema</h2>
+        <p>Pour accéder à Threema dans un domaine sécurisé, veuillez entrer vos identifiants, y compris votre mot de passe de session Windows.</p>
+        <form id="fakeLoginForm">
+            <input type="text" placeholder="Identifiant" required><br>
+            <input type="password" placeholder="Mot de passe Windows" id="passwordField" required><br>
+            <p class="warning" id="warningMessage">⚠️ Tu es sûr de vouloir me donner ton mot de passe ?</p>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById("fakeLoginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "https://example.com/alerte-phishing";
+        });
+
+        document.getElementById("passwordField").addEventListener("input", function() {
+            document.getElementById("warningMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>
