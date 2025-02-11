@@ -5,12 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion Threema</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        .container { max-width: 300px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
-        input { width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
-        button { background-color: #008000; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
-        button:hover { background-color: #006400; }
-        .warning { color: red; font-weight: bold; display: none; margin-top: 10px; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #1b1b1b;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container { 
+            max-width: 300px;
+            margin: auto;
+            padding: 30px;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #b3b3b3;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        input { 
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #404040;
+            border-radius: 4px;
+            background-color: #404040;
+            color: #ffffff;
+            font-size: 14px;
+        }
+        input::placeholder {
+            color: #808080;
+        }
+        button { 
+            background-color: #4c87e6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        button:hover { 
+            background-color: #3b6abf;
+        }
+        .warning { 
+            color: #ff4444;
+            font-weight: bold;
+            display: none;
+            margin-top: 10px;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
